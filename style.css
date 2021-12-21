@@ -17,12 +17,14 @@ body {
     justify-content: center;
 }
 
-#bio {
+/* !!! WARNING !!! - ONLY USED FOR PREVIEW, CHANGE ACCORDINGLY */
+#bio, #skills, #project, #contact_form {
     height: 400px;
 }
+/* !!! WARNING !!! - ONLY USED FOR PREVIEW, CHANGE ACCORDINGLY */
 
 .img {
-    background-image: linear-gradient(0deg, #111, transparent 180%), url(img/back.jpg);
+    background: linear-gradient(0deg, #111, transparent 180%), url(img/back.jpg);
     background-size: cover;
     width: 100%;
     height: 100vh;

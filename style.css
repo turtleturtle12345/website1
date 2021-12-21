@@ -40,6 +40,57 @@ body {
     top: 0;
 }
 
+.menu {
+    background-color: rgba(255,255,255,0.8);
+    width: 0;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    transition-duration: 0.5s;
+}
+
+.menu_list {
+    display: none;
+    padding: 0;
+}
+
+.menu_list li {
+    list-style: none;
+    padding-bottom: 5px;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+.toggle {
+    width: 50%;
+}
+
+.hamburger_menu {
+    position: absolute;
+    right: -40px;
+    top: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.menu_lines {
+    gap: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    border-bottom: 2px var(--medium_text) solid;
+    width: 30px;
+}
+
 .scroll_button {
     display: flex;
     flex-direction: column;

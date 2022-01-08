@@ -75,7 +75,7 @@ body {
 }
 
 .menu_list li a {
-    color: #fff;
+    color: var(--light_text);
 }
 
 .menu_list li:hover {

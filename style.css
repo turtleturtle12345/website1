@@ -4,11 +4,20 @@
     --light_text: #f4f4f4;
 }
 
+/* Hide scroolbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar{
+    display: none;
+}
+
 body {
     color: #4a4a4a;
+    font-size: 16px;
     padding: 0;
     margin: 0;
     font-family: "Lato", "Sans Serif";
+    /* Hide scroolbar for IE, Edge and Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 /* SECTIONS */
@@ -118,6 +127,26 @@ a {
     border-right: 1px var(--medium_text) solid;
     transform: rotate(45deg);
     height: 30px;
+}
+
+.mainHeader{
+    position: absolute;
+    top: 50%;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.mainHeader span:nth-child(1) {
+    font-size: 2.5em;
+    background: rgba(255, 0, 0, 0.2);
+    padding: 0.2em 0.5em;
+    letter-spacing: 0.4em;
+    margin-bottom: 0.5em;
 }
 
 @media only screen and (min-width: 800px) {

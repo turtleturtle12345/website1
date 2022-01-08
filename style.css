@@ -62,14 +62,45 @@ body {
 .menu_list {
     display: none;
     padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .menu_list li {
     list-style: none;
-    padding-bottom: 5px;
-    text-align: center;
+    box-shadow: 1px 1px 2px;
+    text-align: left;
     cursor: pointer;
-    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+.menu_list li a {
+    color: #fff;
+}
+
+.menu_list li:hover {
+    background: rgba(255,0,0,0.4) !important;
+}
+
+.menu_list li:nth-child(1) {
+    background: rgba(0,0,0,0.3);
+}
+
+.menu_list li:nth-child(2) {
+    background: rgba(0,0,0,0.4);
+}
+
+.menu_list li:nth-child(3) {
+    background: rgba(0,0,0,0.5);
+}
+
+.menu_list li:nth-child(4) {
+    background: rgba(0,0,0,0.6);
+}
+
+i[class^="fa"]{
+    font-size: 1.5em;
+    padding: 1em;
 }
 
 a {
@@ -131,7 +162,7 @@ a {
 
 .mainHeader{
     position: absolute;
-    top: 50%;
+    bottom: 45%;
     color: #fff;
     font-size: 2vw;
     letter-spacing: 10px;
@@ -153,6 +184,6 @@ a {
 
 @media only screen and (min-width: 800px) {
     .toggle {
-        width:25%;
+        width:30%;
     }
 }
